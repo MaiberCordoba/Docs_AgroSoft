@@ -31,6 +31,10 @@ export default defineConfig({
           label: "Manual de Configuracion Base de Datos",
           items: [{ label: "Example Guide", slug: "doc4/example" }],
         },
+        {
+          label: "Documento de Diseños UML",
+          items: [{ label: "Example Guide", slug: "doc5/example" }],
+        },
       ],
     }),
   ],
