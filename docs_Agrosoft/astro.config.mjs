@@ -21,7 +21,7 @@ export default defineConfig({
         },
         {
           label: "Especificacion Requisitos de Software",
-          items: [{ label: "Example Guide", slug: "doc2/example" }],
+          items: [{ label: "Requisitos", slug: "doc2/example" }],
         },
         {
           label: "Prototipado del Sistema",
@@ -29,7 +29,12 @@ export default defineConfig({
         },
         {
           label: "Manual de Configuracion Base de Datos",
-          items: [{ label: "Guia para la configuracion de la base de datos", slug: "doc4/example" }],
+          items: [
+            {
+              label: "Guia para la configuracion de la base de datos",
+              slug: "doc4/example",
+            },
+          ],
         },
         {
           label: "Documento de Diseños UML",
