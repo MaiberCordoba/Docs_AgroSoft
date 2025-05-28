@@ -1,11 +1,12 @@
 ---
-title: UML
+title: Actores del Sistema 
 description: A reference page in my new Starlight docs site.
 ---
+ 
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
-
-## Further reading
-
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
+| Rol         | Descripción                          | Permisos                             |
+|-------------|--------------------------------------|--------------------------------------|
+| **Admin**   | Configuración global del sistema     | Gestionar usuarios, backups, módulos |
+| **Instructor** | Supervisión y validación de datos | Ver/editar registros, generar reportes |
+| **Pasante** | Usuario temporal con acceso limitado | Registrar actividades básicas        |
+| **Invitado**| Solo lectura                         | Consultar datos públicos             |
