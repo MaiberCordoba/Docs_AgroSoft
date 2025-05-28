@@ -29,7 +29,7 @@ export default defineConfig({
         },
         {
           label: "Manual de Configuracion Base de Datos",
-          items: [{ label: "Example Guide", slug: "doc4/example" }],
+          items: [{ label: "Guia para la configuracion de la base de datos", slug: "doc4/example" }],
         },
       ],
     }),
