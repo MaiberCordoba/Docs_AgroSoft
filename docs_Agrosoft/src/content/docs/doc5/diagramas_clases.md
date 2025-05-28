@@ -5,3 +5,7 @@ description: A reference page in my new Starlight docs site.
 ####  IoT
 
 ![caso](../../../../public/clases.png)  
+
+####  Trazabilidad
+
+![caso](../../../assets/Trazabilidad/TrazabilidadClases.png)  
