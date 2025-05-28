@@ -106,7 +106,7 @@ Este documento complementa la información previa proporcionando una visión det
 - **Configuración del Sistema**: Permite modificar parámetros del sistema, como preferencias de usuario, unidades de medida y personalización de reportes.
 
 #### 2.1.2 Mapa de Navegación  
-![Mapa de navegación de Agrosoft](../../assets/logoAgrosofWB.png)  
+![Mapa de navegación de Agrosoft]()  
 
 ### 2.2 Características del producto
 
