@@ -33,7 +33,33 @@ export default defineConfig({
         },
         {
           label: "Documento de Diseños UML",
-          items: [{ label: "Example Guide", slug: "doc5/example" }],
+          items: [
+            { label: "Introduccion", slug: "doc5/introduccion" },
+            {
+              label: "Descripcion general de autores",
+              slug: "doc5/descripcion",
+            },
+            {
+              label: "Diagramas de casos de uso",
+              slug: "doc5/casos_uso",
+            },
+            {
+              label: "Especificacion casos de uso",
+              slug: "doc5/especificacion_casos_uso",
+            },
+            {
+              label: "Diagramas de actividades",
+              slug: "doc5/diagramas_actividades",
+            },
+            {
+              label: "Diagramas de clases",
+              slug: "doc5/diagramas_clases",
+            },
+            {
+              label: "Modelo entidad relacion",
+              slug: "doc5/er",
+            },
+          ],
         },
       ],
     }),
