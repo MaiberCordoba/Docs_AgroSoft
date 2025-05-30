@@ -17,7 +17,7 @@ export default defineConfig({
       sidebar: [
         {
           label: "Planteamiento del problema",
-          items: [{ label: "Example Guide", slug: "doc1/example" }],
+          items: [{ label: "Introducción", slug: "doc1/example" }],
         },
         {
           label: "Especificacion Requisitos de Software",
