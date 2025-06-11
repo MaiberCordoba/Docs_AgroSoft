@@ -22,3 +22,8 @@ description: A reference page in my new Starlight docs site.
 ### IoT
 
 ![caso](../../../../public/clases.png)
+### Sanidad
+
+![caso](../../../../public/Capturadiagramadeclases2025-06-11%20091845.png)
+
+

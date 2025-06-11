@@ -64,8 +64,18 @@ export default defineConfig({
               label: "Modelo entidad relacion",
               slug: "doc5/er",
             },
+            
           ],
         },
+        {
+          label: "Manual de Usuario",
+          items: [
+             {
+              label: "diagrama de funcionalidades",
+              slug: "doc6/diagrama_de_funcionalidades",
+            }, ],
+        },
+
       ],
     }),
   ],

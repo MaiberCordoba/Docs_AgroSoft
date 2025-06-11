@@ -63,7 +63,6 @@ El objetivo es mejorar la operatividad del entorno donde se implemente el softwa
 
 ### 1.3 Definiciones, Acrónimos y Abreviaturas
 
-[Incluir aquí definiciones de términos técnicos si es necesario]
 
 ### 1.4 Responsables e involucrados
 
@@ -78,7 +77,7 @@ El objetivo es mejorar la operatividad del entorno donde se implemente el softwa
 
 ### 1.5 Referencias (bibliografía o web grafía)
 
-[Incluir aquí referencias si es necesario]
+
 
 ## 2. Descripción general
 
@@ -106,7 +105,9 @@ Este documento complementa la información previa proporcionando una visión det
 - **Configuración del Sistema**: Permite modificar parámetros del sistema, como preferencias de usuario, unidades de medida y personalización de reportes.
 
 #### 2.1.2 Mapa de Navegación  
-![Mapa de navegación de Agrosoft]()  
+
+![caso](../../../../public/mapa%20de%20navegancion.png)
+ 
 
 ### 2.2 Características del producto
 
