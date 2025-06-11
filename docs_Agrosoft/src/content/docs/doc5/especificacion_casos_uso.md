@@ -2,6 +2,7 @@
 title: UML
 description: A reference page in my new Starlight docs site.
 ---
+
 ---
 
 <style is:global>
@@ -68,8 +69,260 @@ description: A reference page in my new Starlight docs site.
   }
 </style>
 
+### Tabla de especificación Trazabilidad.
+
+---
+
+<table class="iot-table">
+  <thead>
+    <tr>
+      <th>Campo</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="highlight">NOMBRE</td>
+      <td>Módulo Trazabilidad</td>
+    </tr>
+    <tr>
+      <td class="highlight">AUTORES</td>
+      <td>Carlos Manuel Zuñiga Lopez</td>
+    </tr>
+    <tr>
+      <td class="highlight">DESCRIPCIÓN</td>
+      <td>
+        El módulo de trazabilidad permite gestionar y registrar de forma estructurada cada etapa del proceso agrícola, desde la creación de tipos de especie hasta la plantación final. Facilita el seguimiento detallado de cultivos, especies, semilleros, lotes y eras, permitiendo visualizar relaciones y evolución a lo largo del tiempo. Este control integral mejora la planificación, el análisis histórico y la toma de decisiones en la producción agrícola.
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">ACTORES</td>
+      <td>
+        <span class="highlight">Instructor:</span> Puede realizar todas las acciones del proceso de trazabilidad<br>
+        <span class="highlight">Pasante:</span> Puede realizar todas las acciones del proceso de trazabilidad<br>
+        <span class="highlight">Aprendiz:</span> Solo tiene permisos de visualización de los registros
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">PRIORIDAD</td>
+      <td>Alta</td>
+    </tr>
+    <tr>
+      <td class="highlight">PRECONDICIONES</td>
+      <td>
+        - Haber iniciado sesión con un rol válido<br>
+        - Tener al menos un tipo de especie creado previamente
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">FLUJO NORMAL</td>
+      <td>
+        1. Crear un Tipo de Especie<br>
+        2. Crear una Especie asociando un Tipo de Especie<br>
+        3. Crear un Cultivo y vincular una Especie<br>
+        4. (Opcional) Crear un Semillero para el Cultivo<br>
+        5. Crear un Lote agrícola<br>
+        6. Crear una Era dentro del Lote<br>
+        7. Registrar una Plantación, asociando Cultivo, Semillero (si existe) y Era
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">FLUJOS ALTERNOS</td>
+      <td>
+        <span class="highlight">FA1: Semillero no registrado</span><br>
+        - La plantación se puede registrar sin semillero<br><br>
+        <span class="highlight">FA2: Falta de datos relacionados</span><br>
+        - No se permite avanzar si no se ha registrado el paso anterior requerido (por ejemplo, especie sin tipo)
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">POSTCONDICIÓN</td>
+      <td>
+        - Registro completo y trazable del proceso agrícola<br>
+        - Datos disponibles para consulta histórica y seguimiento
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">EXCEPCIONES</td>
+      <td>
+        <span class="highlight">EX1: Error de conexión con la base de datos</span> - Se muestra mensaje de error y se impide el registro<br>
+        <span class="highlight">EX2: Ingreso de datos inválidos</span> - Validaciones previas alertan al usuario<br>
+        <span class="highlight">EX3: Rol sin permisos</span> - Acceso denegado para acciones restringidas
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### Tabla de especificación Actividades.
+
+---
+
+<table class="iot-table">
+  <thead>
+    <tr>
+      <th>Campo</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="highlight">NOMBRE</td>
+      <td>Módulo Actividades</td>
+    </tr>
+    <tr>
+      <td class="highlight">AUTORES</td>
+      <td>Maiber Jhadir Cordoba Cabezas</td>
+    </tr>
+    <tr>
+      <td class="highlight">DESCRIPCIÓN</td>
+      <td>
+        El módulo de actividades permite gestionar las tareas agrícolas, incluyendo la asignación de actividades, el registro de tiempo invertido y el uso de insumos. Facilita el seguimiento de estados (asignada, completada, cancelada), costos laborales y consumo de recursos, mejorando la planificación y el control de las operaciones agrícolas.
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">ACTORES</td>
+      <td>
+        <span class="highlight">Admin:</span> Puede realizar todas las acciones (ver y editar actividades, tiempos, insumos, etc.)<br>
+        <span class="highlight">Instructor:</span> Puede ver todos los registros, pero solo editar actividades<br>
+        <span class="highlight">Pasante:</span> Puede ver todos los registros, pero solo editar actividades<br>
+        <span class="highlight">Visitante:</span> No tiene acceso a ver ni editar nada
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">PRIORIDAD</td>
+      <td>Alta</td>
+    </tr>
+    <tr>
+      <td class="highlight">PRECONDICIONES</td>
+      <td>
+        - Haber iniciado sesión con un rol válido (Admin, Instructor, Pasante)<br>
+        - Tener al menos un tipo de actividad, unidad de tiempo y unidad de medida creados
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">FLUJO NORMAL</td>
+      <td>
+        1. Crear un Tipo de Actividad (e.g., siembra)<br>
+        2. Crear una Unidad de Tiempo (e.g., horas)<br>
+        3. Crear una Unidad de Medida (e.g., litros)<br>
+        4. Registrar una Actividad (título, descripción, fecha, usuario)<br>
+        5. Registrar Tiempo invertido en una actividad (tiempo, unidad, salario)<br>
+        6. Registrar Uso de Insumos en una actividad (insumo, cantidad)<br>
+        7. Consultar registros de actividades, tiempos o insumos
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">FLUJOS ALTERNOS</td>
+      <td>
+        <span class="highlight">FA1: Actividad sin usuario asignado</span><br>
+        - Se puede registrar con usuario "Sin asignar"<br><br>
+        <span class="highlight">FA2: Uso de insumos sin actividad</span><br>
+        - Se puede asociar a un control en lugar de una actividad
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">POSTCONDICIÓN</td>
+      <td>
+        - Registro completo de actividades, tiempos e insumos<br>
+        - Datos disponibles para análisis operativo y reportes
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">EXCEPCIONES</td>
+      <td>
+        <span class="highlight">EX1: Error de conexión con la base de datos</span> - Se muestra mensaje de error y se impide el registro<br>
+        <span class="highlight">EX2: Ingreso de datos inválidos</span> - Validaciones previas alertan al usuario<br>
+        <span class="highlight">EX3: Rol sin permisos</span> - Acceso denegado para acciones restringidas (e.g., Pasante intenta editar tiempos)
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### Tabla de especificación Finanzas.
+
+---
+
+<table class="iot-table">
+  <thead>
+    <tr>
+      <th>Campo</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="highlight">NOMBRE</td>
+      <td>Módulo Finanzas</td>
+    </tr>
+    <tr>
+      <td class="highlight">AUTORES</td>
+      <td>Maiber Jhadir Cordoba Cabezas</td>
+    </tr>
+    <tr>
+      <td class="highlight">DESCRIPCIÓN</td>
+      <td>
+        El módulo de finanzas permite gestionar los aspectos económicos de la producción agrícola, incluyendo el registro de cosechas, ventas y salarios. Facilita el cálculo de valores totales, descuentos y costos laborales, proporcionando un control detallado de los ingresos y gastos. Este módulo mejora la planificación financiera y la toma de decisiones basadas en datos históricos.
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">ACTORES</td>
+      <td>
+        <span class="highlight">Admin:</span> Puede realizar todas las acciones (ver y editar cosechas, ventas, salarios, unidades de medida)<br>
+        <span class="highlight">Instructor:</span> Puede ver todos los registros, pero solo editar cosechas<br>
+        <span class="highlight">Pasante:</span> Puede ver todos los registros, pero solo editar cosechas<br>
+        <span class="highlight">Visitante:</span> No tiene acceso a ver ni editar nada
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">PRIORIDAD</td>
+      <td>Alta</td>
+    </tr>
+    <tr>
+      <td class="highlight">PRECONDICIONES</td>
+      <td>
+        - Haber iniciado sesión con un rol válido (Admin, Instructor, Pasante)<br>
+        - Tener al menos una unidad de medida creada para cosechas y ventas
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">FLUJO NORMAL</td>
+      <td>
+        1. Crear una Unidad de Medida (e.g., kg, gramos)<br>
+        2. Registrar una Cosecha (cantidad, precio por unidad, fecha)<br>
+        3. Registrar una Venta asociada a una cosecha (cantidad, descuento)<br>
+        4. Registrar un Salario (nombre, monto, horas)<br>
+        5. Consultar registros de cosechas, ventas o salarios
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">FLUJOS ALTERNOS</td>
+      <td>
+        <span class="highlight">FA1: Cosecha sin unidad de medida</span><br>
+        - Se puede registrar con unidad por defecto (si aplica)<br><br>
+        <span class="highlight">FA2: Venta sin cosecha</span><br>
+        - No se permite registrar si no hay cosecha asociada
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">POSTCONDICIÓN</td>
+      <td>
+        - Registro completo de transacciones financieras<br>
+        - Datos disponibles para análisis económico y reportes
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">EXCEPCIONES</td>
+      <td>
+        <span class="highlight">EX1: Error de conexión con la base de datos</span> - Se muestra mensaje de error y se impide el registro<br>
+        <span class="highlight">EX2: Ingreso de datos inválidos</span> - Validaciones previas alertan al usuario<br>
+        <span class="highlight">EX3: Rol sin permisos</span> - Acceso denegado para acciones restringidas (e.g., Instructor intenta editar ventas)
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Tabla de especificación IoT.
+
 ---
 
 <table class="iot-table">
@@ -149,90 +402,6 @@ description: A reference page in my new Starlight docs site.
         <span class="highlight">EX1: Datos corruptos</span> - Descartar y notificar<br>
         <span class="highlight">EX2: Sensor inactivo</span> - Alerta de desconexión<br>
         <span class="highlight">EX3: Error de comunicación</span> - Reintento cada 5 min
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-### Tabla de especificación Trazabilidad.
----
-
-<table class="iot-table">
-  <thead>
-    <tr>
-      <th>Campo</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="highlight">NOMBRE</td>
-      <td>Módulo Trazabilidad</td>
-    </tr>
-    <tr>
-      <td class="highlight">AUTORES</td>
-      <td>Carlos Manuel Zuñiga Lopez</td>
-    </tr>
-    <tr>
-      <td class="highlight">DESCRIPCIÓN</td>
-      <td>
-        El módulo de trazabilidad permite gestionar y registrar de forma estructurada cada etapa del proceso agrícola, desde la creación de tipos de especie hasta la plantación final. Facilita el seguimiento detallado de cultivos, especies, semilleros, lotes y eras, permitiendo visualizar relaciones y evolución a lo largo del tiempo. Este control integral mejora la planificación, el análisis histórico y la toma de decisiones en la producción agrícola.
-      </td>
-    </tr>
-    <tr>
-      <td class="highlight">ACTORES</td>
-      <td>
-        <span class="highlight">Instructor:</span> Puede realizar todas las acciones del proceso de trazabilidad<br>
-        <span class="highlight">Pasante:</span> Puede realizar todas las acciones del proceso de trazabilidad<br>
-        <span class="highlight">Aprendiz:</span> Solo tiene permisos de visualización de los registros
-      </td>
-    </tr>
-    <tr>
-      <td class="highlight">PRIORIDAD</td>
-      <td>Alta</td>
-    </tr>
-    <tr>
-      <td class="highlight">PRECONDICIONES</td>
-      <td>
-        - Haber iniciado sesión con un rol válido<br>
-        - Tener al menos un tipo de especie creado previamente
-      </td>
-    </tr>
-    <tr>
-      <td class="highlight">FLUJO NORMAL</td>
-      <td>
-        1. Crear un Tipo de Especie<br>
-        2. Crear una Especie asociando un Tipo de Especie<br>
-        3. Crear un Cultivo y vincular una Especie<br>
-        4. (Opcional) Crear un Semillero para el Cultivo<br>
-        5. Crear un Lote agrícola<br>
-        6. Crear una Era dentro del Lote<br>
-        7. Registrar una Plantación, asociando Cultivo, Semillero (si existe) y Era
-      </td>
-    </tr>
-    <tr>
-      <td class="highlight">FLUJOS ALTERNOS</td>
-      <td>
-        <span class="highlight">FA1: Semillero no registrado</span><br>
-        - La plantación se puede registrar sin semillero<br><br>
-        <span class="highlight">FA2: Falta de datos relacionados</span><br>
-        - No se permite avanzar si no se ha registrado el paso anterior requerido (por ejemplo, especie sin tipo)
-      </td>
-    </tr>
-    <tr>
-      <td class="highlight">POSTCONDICIÓN</td>
-      <td>
-        - Registro completo y trazable del proceso agrícola<br>
-        - Datos disponibles para consulta histórica y seguimiento
-      </td>
-    </tr>
-    <tr>
-      <td class="highlight">EXCEPCIONES</td>
-      <td>
-        <span class="highlight">EX1: Error de conexión con la base de datos</span> - Se muestra mensaje de error y se impide el registro<br>
-        <span class="highlight">EX2: Ingreso de datos inválidos</span> - Validaciones previas alertan al usuario<br>
-        <span class="highlight">EX3: Rol sin permisos</span> - Acceso denegado para acciones restringidas
       </td>
     </tr>
   </tbody>

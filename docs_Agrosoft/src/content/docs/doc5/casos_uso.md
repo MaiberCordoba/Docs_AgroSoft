@@ -3,10 +3,18 @@ title: Diagramas de Casos de Uso
 description: sad
 ---
 
-####  IoT
+### Trazabilidad
 
-![caso](../../../../public/caso%20de%20uso.png)  
+![caso](../../../assets/Trazabilidad/TrazabilidadCasosdeUsos.png)
 
-####  Trazabilidad
+### Activididades
 
-![caso](../../../assets/Trazabilidad/TrazabilidadCasosdeUsos.png)  
+![caso](../../../../public/ACTcasosDeUso1.jpg)
+
+### Finanzas
+
+![caso](../../../../public/FIcasosUso.png)
+
+### IoT
+
+![caso](../../../../public/caso%20de%20uso.png)

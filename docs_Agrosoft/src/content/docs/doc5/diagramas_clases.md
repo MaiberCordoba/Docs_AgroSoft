@@ -2,10 +2,23 @@
 title: UML
 description: A reference page in my new Starlight docs site.
 ---
-####  IoT
 
-![caso](../../../../public/clases.png)  
+### Diagrama Sistema
 
-####  Trazabilidad
+![caso](../../../../public/clasesGL.jpeg)
 
-![caso](../../../assets/Trazabilidad/TrazabilidadClases.png)  
+### Trazabilidad
+
+![caso](../../../assets/Trazabilidad/TrazabilidadClases.png)
+
+### Actividades
+
+![caso](../../../../public/ACTclases.jpg)
+
+### Finanzas
+
+![caso](../../../../public/ClaseSFinanzas.jpg)
+
+### IoT
+
+![caso](../../../../public/clases.png)

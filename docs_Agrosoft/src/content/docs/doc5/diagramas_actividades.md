@@ -3,10 +3,18 @@ title: UML
 description: A reference page in my new Starlight docs site.
 ---
 
-####  IoT
+### Trazabilidad
 
-![caso](../../../../public/actividades.png)  
+![caso](../../../assets/Trazabilidad/TrazabilidadActividades.png)
 
-####  Trazabilidad
+### Actividades
 
-![caso](../../../assets/Trazabilidad/TrazabilidadActividades.png) 
+![caso](../../../../public/ACTactividadesD.jpg)
+
+### Finanzas
+
+![caso](../../../../public/FIActividades.png)
+
+### IoT
+
+![caso](../../../../public/actividades.png)
