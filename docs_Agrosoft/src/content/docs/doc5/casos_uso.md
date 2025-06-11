@@ -15,6 +15,9 @@ description: sad
 
 ![caso](../../../../public/FIcasosUso.png)
 
+### Inventario
+![caso](../../../../public/inventarioCU.png)
+
 ### IoT
 
 ![caso](../../../../public/caso%20de%20uso.png)

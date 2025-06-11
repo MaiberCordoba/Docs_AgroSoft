@@ -19,6 +19,9 @@ description: A reference page in my new Starlight docs site.
 
 ![caso](../../../../public/ClaseSFinanzas.jpg)
 
+### Inventario
+![caso](../../../../public/inventarioClases.png)
+
 ### IoT
 
 ![caso](../../../../public/clases.png)
