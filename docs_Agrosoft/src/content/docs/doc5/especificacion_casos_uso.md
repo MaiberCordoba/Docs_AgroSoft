@@ -153,3 +153,87 @@ description: A reference page in my new Starlight docs site.
     </tr>
   </tbody>
 </table>
+
+
+### Tabla de especificación Trazabilidad.
+---
+
+<table class="iot-table">
+  <thead>
+    <tr>
+      <th>Campo</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="highlight">NOMBRE</td>
+      <td>Módulo Trazabilidad</td>
+    </tr>
+    <tr>
+      <td class="highlight">AUTORES</td>
+      <td>Carlos Manuel Zuñiga Lopez</td>
+    </tr>
+    <tr>
+      <td class="highlight">DESCRIPCIÓN</td>
+      <td>
+        El módulo de trazabilidad permite gestionar y registrar de forma estructurada cada etapa del proceso agrícola, desde la creación de tipos de especie hasta la plantación final. Facilita el seguimiento detallado de cultivos, especies, semilleros, lotes y eras, permitiendo visualizar relaciones y evolución a lo largo del tiempo. Este control integral mejora la planificación, el análisis histórico y la toma de decisiones en la producción agrícola.
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">ACTORES</td>
+      <td>
+        <span class="highlight">Instructor:</span> Puede realizar todas las acciones del proceso de trazabilidad<br>
+        <span class="highlight">Pasante:</span> Puede realizar todas las acciones del proceso de trazabilidad<br>
+        <span class="highlight">Aprendiz:</span> Solo tiene permisos de visualización de los registros
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">PRIORIDAD</td>
+      <td>Alta</td>
+    </tr>
+    <tr>
+      <td class="highlight">PRECONDICIONES</td>
+      <td>
+        - Haber iniciado sesión con un rol válido<br>
+        - Tener al menos un tipo de especie creado previamente
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">FLUJO NORMAL</td>
+      <td>
+        1. Crear un Tipo de Especie<br>
+        2. Crear una Especie asociando un Tipo de Especie<br>
+        3. Crear un Cultivo y vincular una Especie<br>
+        4. (Opcional) Crear un Semillero para el Cultivo<br>
+        5. Crear un Lote agrícola<br>
+        6. Crear una Era dentro del Lote<br>
+        7. Registrar una Plantación, asociando Cultivo, Semillero (si existe) y Era
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">FLUJOS ALTERNOS</td>
+      <td>
+        <span class="highlight">FA1: Semillero no registrado</span><br>
+        - La plantación se puede registrar sin semillero<br><br>
+        <span class="highlight">FA2: Falta de datos relacionados</span><br>
+        - No se permite avanzar si no se ha registrado el paso anterior requerido (por ejemplo, especie sin tipo)
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">POSTCONDICIÓN</td>
+      <td>
+        - Registro completo y trazable del proceso agrícola<br>
+        - Datos disponibles para consulta histórica y seguimiento
+      </td>
+    </tr>
+    <tr>
+      <td class="highlight">EXCEPCIONES</td>
+      <td>
+        <span class="highlight">EX1: Error de conexión con la base de datos</span> - Se muestra mensaje de error y se impide el registro<br>
+        <span class="highlight">EX2: Ingreso de datos inválidos</span> - Validaciones previas alertan al usuario<br>
+        <span class="highlight">EX3: Rol sin permisos</span> - Acceso denegado para acciones restringidas
+      </td>
+    </tr>
+  </tbody>
+</table>
