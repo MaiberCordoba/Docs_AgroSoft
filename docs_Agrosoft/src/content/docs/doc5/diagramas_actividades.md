@@ -15,6 +15,10 @@ description: A reference page in my new Starlight docs site.
 
 ![caso](../../../../public/FIActividades.png)
 
+### Inventario
+
+![caso](../../../../public/inventarioActividades.png)
+
 ### IoT
 
 ![caso](../../../../public/actividades.png)
