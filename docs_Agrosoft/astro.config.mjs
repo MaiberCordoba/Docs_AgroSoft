@@ -68,7 +68,7 @@ export default defineConfig({
           ],
         },
         {
-          label: "Manual de Usuario",
+          label: "diagrama de funcionalidades del sistema",
           items: [
              {
               label: "diagrama de funcionalidades",
