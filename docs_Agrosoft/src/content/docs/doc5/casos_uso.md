@@ -3,6 +3,11 @@ title: Diagramas de Casos de Uso
 description: sad
 ---
 
+### Diagrama Sistema
+
+![caso](../../../assets/Trazabilidad/UseCaseDiagram1.jpg)
+
+
 ### Trazabilidad
 
 ![caso](../../../assets/Trazabilidad/TrazabilidadCasosdeUsos.png)

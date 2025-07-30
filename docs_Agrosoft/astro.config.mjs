@@ -68,11 +68,20 @@ export default defineConfig({
           ],
         },
         {
-          label: "diagrama de funcionalidades del sistema",
+          label: "Diagrama de funcionalidades del sistema",
           items: [
              {
-              label: "diagrama de funcionalidades",
+              label: "Diagrama de funcionalidades",
               slug: "doc6/diagrama_de_funcionalidades",
+            }, ],
+        },
+
+        {
+          label: "Documento casos de prueba",
+          items: [
+             {
+              label: "Documento casos de prueba",
+              slug: "doc77/documento_casos_de_prueba",
             }, ],
         },
 
