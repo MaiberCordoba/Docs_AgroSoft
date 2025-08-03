@@ -85,6 +85,15 @@ export default defineConfig({
             }, ],
         },
 
+        {
+          label: "Informe general del sistema",
+          items: [
+             {
+              label: "Informe general del sistema",
+              slug: "doc8/informe_general",
+            }, ],
+        },
+
       ],
     }),
   ],
