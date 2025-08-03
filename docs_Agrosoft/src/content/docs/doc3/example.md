@@ -2,11 +2,6 @@
 title: PROTOTIPADO SISTEMA
 description: A reference page in my new Starlight docs site.
 ---
----
-title: REQUERIMIENTOS FUNCIONALES - AGROSIS
-description: Página de referencia con todos los requerimientos funcionales del sistema AgroSis.
----
-
 ## Requerimientos Funcionales
 
 ### RF01 - EL SISTEMA DEBE PERMITIR AL USUARIO INICIAR SESIÓN
@@ -33,13 +28,13 @@ Actualizar información asociada a cada insumo.
 ![caso](../../../../public/prototipado/ediatarinsumos.png)
 ### RF08 - EL SISTEMA DEBE PERMITIR REGISTRAR HERRAMIENTAS AGRÍCOLAS
 Registrar, editar o eliminar herramientas.
-![caso](../../../../public/prototipado/)
+![caso](../../../../public/prototipado/postH.jpg)
 ### RF09 - EL SISTEMA DEBE PERMITIR LISTAR HERRAMIENTAS
 Listado con detalles de cada herramienta.
-![caso](../../../../public/prototipado/)
+![caso](../../../../public/prototipado/getH.jpg)
 ### RF10 - EL SISTEMA DEBE PERMITIR MOSTRAR Y ACTUALIZAR INFORMACIÓN DE HERRAMIENTAS
 Actualizar información de herramientas ya registradas.
-![caso](../../../../public/prototipado/)
+![caso](../../../../public/prototipado/patchH.jpg)
 ### RF11 - EL SISTEMA MOSTRARÁ INFORMACIÓN DE TODOS LOS SENSORES EN TIEMPO REAL
 Velocidad del viento, temperatura, luz solar, humedad de eras, etc.
 ![caso](../../../../public/prototipado/mostrarsensores.png)
@@ -48,22 +43,13 @@ Mostrar en tiempo real los datos recopilados mediante IoT.
 ![caso](../../../../public/prototipado/humedad%20eras.png)
 ### RF13 - INFORMACIÓN SOBRE LA HUMEDAD AMBIENTE
 Mostrar datos en tiempo real sobre la humedad ambiental.
-![caso](../../../../public/prototipado/)
+![caso](../../../../public/prototipado/humeA.jpg)
 ### RF14 - INFORMACIÓN SOBRE LA LUMINOSIDAD
 Datos de luminosidad recolectados con sensores.
-![caso](../../../../public/prototipado/)
-### RF15 - INFORMACIÓN SOBRE LA LLUVIA
-Cantidad, intensidad y frecuencia mediante pluviómetro.
-![caso](../../../../public/prototipado/)
+![caso](../../../../public/prototipado/lumi.jpg)
 ### RF16 - INFORMACIÓN SOBRE LA TEMPERATURA
 Temperatura medida en tiempo real mediante sensores.
-![caso](../../../../public/prototipado/)
-### RF17 - VELOCIDAD Y DIRECCIÓN DEL VIENTO
-Visualización en tiempo real de datos de viento.
-![caso](../../../../public/prototipado/)
-### RF18 - INFORMACIÓN SOBRE EL PH DEL SUELO
-Lecturas de pH del suelo mediante sensores IoT.
-![caso](../../../../public/prototipado/)
+![caso](../../../../public/prototipado/temp.jpg)
 ### RF19 - MONITOREO DE EVAPOTRANSPIRACIÓN
 Estimar la evapotranspiración para mejorar gestión del riego.
 ![caso](../../../../public/prototipado/epotranspiracion.png)
@@ -103,12 +89,6 @@ Datos como nombre, nivel de daño, acciones de control.
 ### RF31 - CONTROL FITOSANITARIO POR CULTIVO
 Registro de acciones tomadas para erradicar plagas.
 ![caso](../../../../public/prototipado/controles.png)
-### RF32 - REGISTRO Y EDICIÓN DE FASES LUNARES
-Registro de fases y recomendaciones de cultivo.
-![caso](../../../../public/prototipado)
-### RF33 - MOSTRAR INFORMACIÓN SOBRE INFLUENCIA LUNAR
-Calendario interactivo con fases y actividades sugeridas.
-![caso](../../../../public/prototipado)
 ### RF34 - RECORDATORIOS Y EVENTOS EN CALENDARIO
 Registrar fertilizaciones, siembras y cosechas.
 ![caso](../../../../public/prototipado/calendario.png)
@@ -118,18 +98,9 @@ Visualizar en mapa los cultivos y su historial.
 ### RF36 - ASIGNACIÓN DE ROLES Y PERMISOS
 Asignar permisos según perfil de usuario.
 ![caso](../../../../public/prototipado/roles.png)
-### RF37 - REGISTRO Y ACTUALIZACIÓN DE PRECIO DE PRODUCTO
-Registrar precio base y actualizar según condiciones.
-![caso](../../../../public/prototipado/)
 ### RF38 - CONTROL DE ARDUINOS
 Guardar y cambiar configuraciones del microcontrolador.
 ![caso](../../../../public/prototipado/arduinos.png)
-### RF39 - REGISTRO DETALLADO DE VENTAS
-Transacciones completas con datos de cliente, producto, etc.
-![caso](../../../../public/prototipado)
-### RF40 - CÁLCULO DE RENTABILIDAD DE CULTIVO
-Mostrar ingreso, egreso, margen y resumen general.
-![caso](../../../../public/prototipado)
 ### RF41 - GENERAR REPORTE DE USUARIOS
 Análisis de actividad, uso y problemas frecuentes.
 ![caso](../../../../public/prototipado/registro%20de%20reportes.png)

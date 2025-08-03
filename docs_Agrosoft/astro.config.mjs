@@ -25,7 +25,7 @@ export default defineConfig({
         },
         {
           label: "Prototipado del Sistema",
-          items: [{ label: "Example Guide", slug: "doc3/example" }],
+          items: [{ label: "Requisitos funcionales", slug: "doc3/example" }],
         },
         {
           label: "Manual de Configuracion Base de Datos",
